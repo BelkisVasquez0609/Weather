@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:temperature/Locations.dart';
 import 'package:temperature/constants.dart';
 import 'package:temperature/city_screen.dart';
+import 'package:temperature/loading.dart';
 
 void main() => runApp(MyTemperatureApp());
 
@@ -24,7 +25,7 @@ class MyTemperatureApp extends StatelessWidget {
             ],
           ),
         ),
-        body: Locations(),
+        body: LoadingScreen(),
       ),
     );
   }
